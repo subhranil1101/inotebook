@@ -80,7 +80,7 @@ function Notes(props) {
 
                   <div className='row my-3'>
                         <h1>Your Notes</h1>
-                        <div className="container mx-1">{notes.length === 0 && 'Notes notes to display. Add your 1st Note here.'}</div>
+                        <div className="container mx-1">{notes.length === 0 && 'No notes to display. Add your 1st Note here.'}</div>
                         {notes.map((note) => {
                               return <NoteItem key={note._id} showAlert={props.showAlert} updateNote={updateNote} note={note} />
                         }
